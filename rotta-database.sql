@@ -5,7 +5,7 @@
    Banco: rotta_dba
 */
 
-CREATE DATABASE IF NOT EXISTS rotta_dba
+CREATE DATABASE rotta_dba
 CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 USE rotta_dba;
 SET NAMES utf8mb4 COLLATE utf8mb4_unicode_ci;
