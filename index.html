@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f7f4">
+    <meta name="description" content="Planeje e acompanhe seus deslocamentos pelo Recife com o Rotta.">
+    <title>Rotta — Seu Recife, no seu ritmo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="js/ui.js" defer></script>
+    <script src="pages/welcome.js" defer></script>
+    <script src="pages/auth.js" defer></script>
+    <script src="pages/home.js" defer></script>
+    <script src="pages/destination.js" defer></script>
+    <script src="pages/comparison.js" defer></script>
+    <script src="pages/route-details.js" defer></script>
+    <script src="pages/tracking.js" defer></script>
+    <script src="pages/incidents.js" defer></script>
+    <script src="pages/incident-form.js" defer></script>
+    <script src="pages/incident-sent.js" defer></script>
+    <script src="pages/community-incident.js" defer></script>
+    <script src="pages/wallet.js" defer></script>
+    <script src="pages/profile.js" defer></script>
+    <script src="js/app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#screen-root">Pular para o conteúdo</a>
+
+    <header class="topbar">
+      <a class="brand" href="#home" data-nav="home" aria-label="Rotta — início">
+        <span class="brand-mark" aria-hidden="true">R</span>
+        <span class="brand-name">rotta<span>.</span></span>
+      </a>
+      <span class="topbar-context"><span class="status-dot" aria-hidden="true"></span> Recife, PE</span>
+      <a class="topbar-link" href="#welcome" data-nav="welcome">Sobre o Rotta</a>
+    </header>
+
+    <div class="app-layout" id="app-layout">
+      <aside class="sidebar" aria-label="Navegação principal">
+        <p class="sidebar-label">MENU</p>
+        <nav class="sidebar-nav">
+          <a href="#home" data-nav="home"><img src="assets/house.svg" alt=""><span>Início</span></a>
+          <a href="#destination" data-nav="destination"><img src="assets/search.svg" alt=""><span>Buscar trajeto</span></a>
+          <a href="#incidents" data-nav="incidents"><img src="assets/alert.svg" alt=""><span>Ocorrências</span></a>
+          <a href="#wallet" data-nav="wallet"><img src="assets/wallet.svg" alt=""><span>Carteira</span></a>
+          <a href="#profile" data-nav="profile"><img src="assets/user.svg" alt=""><span>Perfil</span></a>
+        </nav>
+        <div class="sidebar-note">
+          <span class="sidebar-note-icon" aria-hidden="true">i</span>
+          <p>Informações de trajetos e saldo dependem da integração com a API.</p>
+        </div>
+      </aside>
+
+      <main class="main-content" id="screen-root" tabindex="-1" aria-live="polite" aria-atomic="true"></main>
+    </div>
+
+    <nav class="bottom-nav" aria-label="Navegação inferior">
+      <a href="#home" data-nav="home"><img src="assets/house.svg" alt=""><span>Início</span></a>
+      <a href="#destination" data-nav="destination"><img src="assets/search.svg" alt=""><span>Rotas</span></a>
+      <a href="#incidents" data-nav="incidents"><img src="assets/alert.svg" alt=""><span>Ocorrências</span></a>
+      <a href="#wallet" data-nav="wallet"><img src="assets/wallet.svg" alt=""><span>Carteira</span></a>
+      <a href="#profile" data-nav="profile"><img src="assets/user.svg" alt=""><span>Perfil</span></a>
+    </nav>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
